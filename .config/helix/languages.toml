@@ -1,0 +1,69 @@
+[[language]]
+name = "rust"
+scope = "source.rust"
+injection-regex = "rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "rust"
+source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9" }
+
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c", "h"]
+indent = { tab-width = 8, unit = "        " }
+formatter = { command = "c-formatter" , args = ["--stdin"] }
+
+[[grammar]]
+name = "c"
+source = { git = "https://github.com/tree-sitter/tree-sitter-c", rev = "72084f447c2051e01a7cd6c6e0477ec71a9297ed" }
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+injection-regex = "cpp"
+file-types = ["cc", "hh", "c++", "cpp", "hpp", "h", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino", "C", "H"]
+roots = []
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "clang-format", args = ["--stype=file"] }
+
+[[grammar]]
+name = "cpp"
+source = { git = "https://github.com/tree-sitter/tree-sitter-cpp", rev = "2d2c4aee8672af4c7c8edff68e7dd4c07e88d2b1" }
+
+[[language]]
+name = "nasm"
+scope = "source.asm"
+file-types = ["s", "S", "asm", "ASM"]
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "nasm"
+source = { git = "https://github.com/RubixDev/tree-sitter-asm" }
+
+[[language]]
+name = "bash"
+scope = "source.sh"
+injection-regex = "bash"
+file-types = ["sh", "bash"]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "bash-formatter" , args = ["--stdin"] }
+language-servers = [ "bash-language-server" ]
+
+[[grammar]]
+name = "bash"
+source = { git = "https://github.com/tree-sitter/tree-sitter-bash" }
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "java"

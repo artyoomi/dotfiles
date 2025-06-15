@@ -1,0 +1,7 @@
+[user]
+	email = zuodleq@gmail.com
+	name = artyoomi
+
+# Fix incorrect display of the Russian language in git commit
+[core]
+	quotepath = false

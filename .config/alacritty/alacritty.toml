@@ -1,0 +1,18 @@
+[font]
+size = 15.5
+
+[font.normal]
+family = "terminus"
+style = "Regular"
+
+[font.bold]
+family = "terminus"
+style = "Bold"
+
+[font.italic]
+family = "terminus"
+style = "Italic"
+
+[font.bold_italic]
+family = "terminus"
+style = "Bold Italic"

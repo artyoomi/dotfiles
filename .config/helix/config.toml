@@ -1,0 +1,28 @@
+# theme = "amberwood"
+# theme = "adwaita-dark"
+# theme = "github_dark"
+# theme = "curzon"
+theme = "dracula_at_night"
+
+[editor]
+auto-completion = false
+cursorline = true
+bufferline = "always"
+# Add 80 columns ruler
+rulers = [80] # rulers are rendered with ${ruler-char}
+
+[editor.lsp]
+# auto-signature-help = false
+
+[keys.insert]
+"C-p" = "completion"
+"C-v" = "signature_help"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-absolute-path"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
