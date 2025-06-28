@@ -19,6 +19,7 @@
     ],
 
     "modules-right": [
+        "hyprland/language",
         "cpu",
         "memory",
         "backlight",
@@ -58,6 +59,12 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         },
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-ru": "RU",
+        "format-en": "US",
     },
     
     //////////////////////
